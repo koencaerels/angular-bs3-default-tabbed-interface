@@ -1,0 +1,12 @@
+<tabs>
+    <pane ng-repeat="pane in panes" 
+          subject-id="{{pane.subjectId}}"
+          subject-type="{{pane.subjectType}}"
+          tab-title="{{pane.name}}"
+          has-changed="{{pane.hasChanged}}"
+          show-icon="{{pane.showIcon}}"
+          can-be-closed="{{pane.canBeClosed}}"
+          controller="{{pane.controller}}" 
+          template="{{pane.partial}}">
+    </pane>
+</tabs>

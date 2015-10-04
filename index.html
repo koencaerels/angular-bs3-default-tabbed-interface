@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Default template for dynamic tabbed angular application.</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- vendor -->
+        <link href="_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="_assets/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="_templates/modules/angular-toastr.min.css" rel="stylesheet">
+        
+        <!-- app -->
+        <link href="_assets/app/css/app.css" rel="stylesheet">
+                
+    </head>
+
+    <body ng-app="tabsInterface">
+
+        <div ng-controller="navigationController">
+        
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/start">
+                            Default Tabbed Interface
+                        </a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">                        
+                        <li><a href="#/my-account">My Account</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="content-zone">
+                <div id="left-zone">&nbsp;</div>
+                <div id="center-zone"><div ng-view></div></div>
+                <div id="right-zone">&nbsp;</div>
+            </div>   
+            
+        </div>
+                
+        <!-- angular -->
+        <script src="_assets/vendor/angular/angular.min.js"></script>
+        <script src="_assets/vendor/angular/angular-sanitize.min.js"></script>
+        <script src="_assets/vendor/angular/angular-route.min.js"></script>
+        
+        <!-- angular modules -->
+        <script src="_templates/modules/angular-ajax-tabs.js"></script>
+        <script src="_templates/modules/angular-toastr.min.js"></script>
+        <script src="_templates/modules/angular-toastr.tpls.js"></script>
+                
+        <!-- application -->
+        <script src="_templates/js/app.js"></script>
+        <script src="_templates/js/controllers.js"></script>
+        <!-- controllers -->
+        <script src="_templates/js/interfaceController.js"></script>
+        <script src="_templates/js/homeController.js"></script>
+        <script src="_templates/js/detailController.js"></script>
+        <script src="_templates/js/navigationController.js"></script>
+        <script src="_templates/js/myAccountController.js"></script>
+        
+    </body>
+</html>

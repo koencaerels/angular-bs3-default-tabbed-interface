@@ -1,0 +1,93 @@
+// General application styles
+
+#content-zone {
+    display: block;
+    width: 100%
+}
+
+#left-zone {
+    display: block;
+    width: 0px;
+    float: left;
+}
+
+#center-zone {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+#right-zone {
+    display: block;
+    width: 0px;
+    float: left;
+}
+
+.navbar {
+    margin-bottom:10px;
+    border: 0px ;
+    background-color: silver;
+    color:black;
+}
+
+body { 
+    padding:20px;
+}
+
+.detail-toolbar {
+    padding: 10px 10px 10px 10px;
+    background-color: lightgrey;
+    min-height: 55px;
+}
+
+.toolbar-left {
+    display: block;
+    width: 200px;
+    float:left;
+}
+
+.toolbar-right {
+    display: block;
+    width: 100px;
+    float:right;
+    text-align: right;
+    margin-top:5px;
+}
+
+.toolbar-center {
+    display: block;
+    float:left;
+    width: 60%;
+}
+
+.toolbar-center p{
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+
+// Extra tab styling
+
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+ul.nav-tabs {
+  list-style: none;
+}
+ul.nav-tabs li {
+  display: inline-block;
+}
+.nav-tabs > li .close {
+    margin: -32px 15px 0 0;
+    font-size: 18px;
+}
+.nav > li > a {
+    padding-right:40px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: lightgrey;
+}
